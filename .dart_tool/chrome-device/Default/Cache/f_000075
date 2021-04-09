@@ -1,0 +1,561 @@
+define(['dart_sdk', 'packages/flutter/src/material/icon_button.dart', 'packages/flutter/src/widgets/widget_span.dart', 'packages/flutter/src/painting/edge_insets.dart', 'packages/provider/src/provider.dart', 'packages/provider_shopper/models/cart.dart', 'packages/flutter/src/widgets/scroll_view.dart', 'packages/flutter/src/widgets/icon.dart', 'packages/flutter/src/material/icons.dart'], (function load__packages__provider_shopper__screens__cart_dart(dart_sdk, packages__flutter__src__material__icon_button$46dart, packages__flutter__src__widgets__widget_span$46dart, packages__flutter__src__painting__edge_insets$46dart, packages__provider__src__provider$46dart, packages__provider_shopper__models__cart$46dart, packages__flutter__src__widgets__scroll_view$46dart, packages__flutter__src__widgets__icon$46dart, packages__flutter__src__material__icons$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const ui = dart_sdk.ui;
+  const _interceptors = dart_sdk._interceptors;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const scaffold = packages__flutter__src__material__icon_button$46dart.src__material__scaffold;
+  const app_bar = packages__flutter__src__material__icon_button$46dart.src__material__app_bar;
+  const list_tile = packages__flutter__src__material__icon_button$46dart.src__material__list_tile;
+  const icon_button = packages__flutter__src__material__icon_button$46dart.src__material__icon_button;
+  const text = packages__flutter__src__widgets__widget_span$46dart.src__widgets__text;
+  const widget_inspector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__widget_inspector;
+  const container = packages__flutter__src__widgets__widget_span$46dart.src__widgets__container;
+  const basic = packages__flutter__src__widgets__widget_span$46dart.src__widgets__basic;
+  const framework = packages__flutter__src__widgets__widget_span$46dart.src__widgets__framework;
+  const navigator = packages__flutter__src__widgets__widget_span$46dart.src__widgets__navigator;
+  const edge_insets = packages__flutter__src__painting__edge_insets$46dart.src__painting__edge_insets;
+  const provider = packages__provider__src__provider$46dart.src__provider;
+  const cart$ = packages__provider_shopper__models__cart$46dart.models__cart;
+  const scroll_view = packages__flutter__src__widgets__scroll_view$46dart.src__widgets__scroll_view;
+  const icon = packages__flutter__src__widgets__icon$46dart.src__widgets__icon;
+  const icons = packages__flutter__src__material__icons$46dart.src__material__icons;
+  var cart = Object.create(dart.library);
+  var $length = dartx.length;
+  var $_get = dartx._get;
+  var $toString = dartx.toString;
+  dart._checkModuleNullSafetyMode(true);
+  var T = {
+    JSArrayOfWidget: () => (T.JSArrayOfWidget = dart.constFn(_interceptors.JSArray$(framework.Widget)))(),
+    ObjectN: () => (T.ObjectN = dart.constFn(dart.nullable(core.Object)))(),
+    VoidTovoid: () => (T.VoidTovoid = dart.constFn(dart.fnType(dart.void, [])))(),
+    BuildContextAndintToListTile: () => (T.BuildContextAndintToListTile = dart.constFn(dart.fnType(list_tile.ListTile, [framework.BuildContext, core.int])))()
+  };
+  var T$Eval = Object.assign({
+    _: () => T$Eval
+  }, T);
+  var S = {
+    _: () => S
+  };
+  var S$Eval = Object.assign({
+    _: () => S$Eval
+  }, S);
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  dart.defineLazy(CT, {
+    get C2() {
+      return C[2] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 21,
+        [_Location_line]: 12,
+        [_Location_file]: null
+      });
+    },
+    get C1() {
+      return C[1] = dart.constList([C[2] || CT.C2], widget_inspector._Location);
+    },
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 16,
+        [_Location_line]: 12,
+        [_Location_file]: "file:///C:/Users/realDmitryScarlet/Desktop/anton/todolist/lib/screens/cart.dart"
+      });
+    },
+    get C5() {
+      return C[5] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "title",
+        [_Location_column]: 9,
+        [_Location_line]: 12,
+        [_Location_file]: null
+      });
+    },
+    get C6() {
+      return C[6] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "backgroundColor",
+        [_Location_column]: 9,
+        [_Location_line]: 13,
+        [_Location_file]: null
+      });
+    },
+    get C4() {
+      return C[4] = dart.constList([C[5] || CT.C5, C[6] || CT.C6], widget_inspector._Location);
+    },
+    get C3() {
+      return C[3] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[4] || CT.C4,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 11,
+        [_Location_file]: "file:///C:/Users/realDmitryScarlet/Desktop/anton/todolist/lib/screens/cart.dart"
+      });
+    },
+    get C7() {
+      return C[7] = dart.const({
+        __proto__: edge_insets.EdgeInsets.prototype,
+        [EdgeInsets_bottom]: 32,
+        [EdgeInsets_right]: 32,
+        [EdgeInsets_top]: 32,
+        [EdgeInsets_left]: 32
+      });
+    },
+    get C9() {
+      return C[9] = dart.constList([], widget_inspector._Location);
+    },
+    get C8() {
+      return C[8] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[9] || CT.C9,
+        [_Location_name]: null,
+        [_Location_column]: 24,
+        [_Location_line]: 22,
+        [_Location_file]: "file:///C:/Users/realDmitryScarlet/Desktop/anton/todolist/lib/screens/cart.dart"
+      });
+    },
+    get C12() {
+      return C[12] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 17,
+        [_Location_line]: 21,
+        [_Location_file]: null
+      });
+    },
+    get C13() {
+      return C[13] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 17,
+        [_Location_line]: 22,
+        [_Location_file]: null
+      });
+    },
+    get C11() {
+      return C[11] = dart.constList([C[12] || CT.C12, C[13] || CT.C13], widget_inspector._Location);
+    },
+    get C10() {
+      return C[10] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[11] || CT.C11,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 20,
+        [_Location_file]: "file:///C:/Users/realDmitryScarlet/Desktop/anton/todolist/lib/screens/cart.dart"
+      });
+    },
+    get C16() {
+      return C[16] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 15,
+        [_Location_line]: 20,
+        [_Location_file]: null
+      });
+    },
+    get C15() {
+      return C[15] = dart.constList([C[16] || CT.C16], widget_inspector._Location);
+    },
+    get C14() {
+      return C[14] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[15] || CT.C15,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 19,
+        [_Location_file]: "file:///C:/Users/realDmitryScarlet/Desktop/anton/todolist/lib/screens/cart.dart"
+      });
+    },
+    get C19() {
+      return C[19] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 11,
+        [_Location_line]: 18,
+        [_Location_file]: null
+      });
+    },
+    get C18() {
+      return C[18] = dart.constList([C[19] || CT.C19], widget_inspector._Location);
+    },
+    get C17() {
+      return C[17] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[18] || CT.C18,
+        [_Location_name]: null,
+        [_Location_column]: 16,
+        [_Location_line]: 17,
+        [_Location_file]: "file:///C:/Users/realDmitryScarlet/Desktop/anton/todolist/lib/screens/cart.dart"
+      });
+    },
+    get C22() {
+      return C[22] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 9,
+        [_Location_line]: 16,
+        [_Location_file]: null
+      });
+    },
+    get C23() {
+      return C[23] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 9,
+        [_Location_line]: 17,
+        [_Location_file]: null
+      });
+    },
+    get C21() {
+      return C[21] = dart.constList([C[22] || CT.C22, C[23] || CT.C23], widget_inspector._Location);
+    },
+    get C20() {
+      return C[20] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[21] || CT.C21,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 15,
+        [_Location_file]: "file:///C:/Users/realDmitryScarlet/Desktop/anton/todolist/lib/screens/cart.dart"
+      });
+    },
+    get C26() {
+      return C[26] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "appBar",
+        [_Location_column]: 7,
+        [_Location_line]: 11,
+        [_Location_file]: null
+      });
+    },
+    get C27() {
+      return C[27] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "body",
+        [_Location_column]: 7,
+        [_Location_line]: 15,
+        [_Location_file]: null
+      });
+    },
+    get C25() {
+      return C[25] = dart.constList([C[26] || CT.C26, C[27] || CT.C27], widget_inspector._Location);
+    },
+    get C24() {
+      return C[24] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[25] || CT.C25,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 10,
+        [_Location_file]: "file:///C:/Users/realDmitryScarlet/Desktop/anton/todolist/lib/screens/cart.dart"
+      });
+    },
+    get C30() {
+      return C[30] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 13,
+        [_Location_line]: 36,
+        [_Location_file]: null
+      });
+    },
+    get C29() {
+      return C[29] = dart.constList([C[30] || CT.C30], widget_inspector._Location);
+    },
+    get C28() {
+      return C[28] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[29] || CT.C29,
+        [_Location_name]: null,
+        [_Location_column]: 5,
+        [_Location_line]: 36,
+        [_Location_file]: "file:///C:/Users/realDmitryScarlet/Desktop/anton/todolist/lib/screens/cart.dart"
+      });
+    },
+    get C33() {
+      return C[33] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 28,
+        [_Location_line]: 40,
+        [_Location_file]: null
+      });
+    },
+    get C32() {
+      return C[32] = dart.constList([C[33] || CT.C33], widget_inspector._Location);
+    },
+    get C31() {
+      return C[31] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[32] || CT.C32,
+        [_Location_name]: null,
+        [_Location_column]: 18,
+        [_Location_line]: 40,
+        [_Location_file]: "file:///C:/Users/realDmitryScarlet/Desktop/anton/todolist/lib/screens/cart.dart"
+      });
+    },
+    get C36() {
+      return C[36] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 28,
+        [_Location_line]: 42,
+        [_Location_file]: null
+      });
+    },
+    get C37() {
+      return C[37] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "size",
+        [_Location_column]: 39,
+        [_Location_line]: 42,
+        [_Location_file]: null
+      });
+    },
+    get C35() {
+      return C[35] = dart.constList([C[36] || CT.C36, C[37] || CT.C37], widget_inspector._Location);
+    },
+    get C34() {
+      return C[34] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[35] || CT.C35,
+        [_Location_name]: null,
+        [_Location_column]: 17,
+        [_Location_line]: 42,
+        [_Location_file]: "file:///C:/Users/realDmitryScarlet/Desktop/anton/todolist/lib/screens/cart.dart"
+      });
+    },
+    get C40() {
+      return C[40] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 11,
+        [_Location_line]: 42,
+        [_Location_file]: null
+      });
+    },
+    get C41() {
+      return C[41] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 11,
+        [_Location_line]: 43,
+        [_Location_file]: null
+      });
+    },
+    get C39() {
+      return C[39] = dart.constList([C[40] || CT.C40, C[41] || CT.C41], widget_inspector._Location);
+    },
+    get C38() {
+      return C[38] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[39] || CT.C39,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 41,
+        [_Location_file]: "file:///C:/Users/realDmitryScarlet/Desktop/anton/todolist/lib/screens/cart.dart"
+      });
+    },
+    get C44() {
+      return C[44] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 39,
+        [_Location_line]: 46,
+        [_Location_file]: null
+      });
+    },
+    get C43() {
+      return C[43] = dart.constList([C[44] || CT.C44], widget_inspector._Location);
+    },
+    get C42() {
+      return C[42] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[43] || CT.C43,
+        [_Location_name]: null,
+        [_Location_column]: 16,
+        [_Location_line]: 46,
+        [_Location_file]: "file:///C:/Users/realDmitryScarlet/Desktop/anton/todolist/lib/screens/cart.dart"
+      });
+    },
+    get C47() {
+      return C[47] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "leading",
+        [_Location_column]: 9,
+        [_Location_line]: 40,
+        [_Location_file]: null
+      });
+    },
+    get C48() {
+      return C[48] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "trailing",
+        [_Location_column]: 9,
+        [_Location_line]: 41,
+        [_Location_file]: null
+      });
+    },
+    get C49() {
+      return C[49] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "title",
+        [_Location_column]: 9,
+        [_Location_line]: 46,
+        [_Location_file]: null
+      });
+    },
+    get C46() {
+      return C[46] = dart.constList([C[47] || CT.C47, C[48] || CT.C48, C[49] || CT.C49], widget_inspector._Location);
+    },
+    get C45() {
+      return C[45] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[46] || CT.C46,
+        [_Location_name]: null,
+        [_Location_column]: 40,
+        [_Location_line]: 39,
+        [_Location_file]: "file:///C:/Users/realDmitryScarlet/Desktop/anton/todolist/lib/screens/cart.dart"
+      });
+    },
+    get C52() {
+      return C[52] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "itemCount",
+        [_Location_column]: 7,
+        [_Location_line]: 38,
+        [_Location_file]: null
+      });
+    },
+    get C53() {
+      return C[53] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "itemBuilder",
+        [_Location_column]: 7,
+        [_Location_line]: 39,
+        [_Location_file]: null
+      });
+    },
+    get C51() {
+      return C[51] = dart.constList([C[52] || CT.C52, C[53] || CT.C53], widget_inspector._Location);
+    },
+    get C50() {
+      return C[50] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[51] || CT.C51,
+        [_Location_name]: null,
+        [_Location_column]: 21,
+        [_Location_line]: 37,
+        [_Location_file]: "file:///C:/Users/realDmitryScarlet/Desktop/anton/todolist/lib/screens/cart.dart"
+      });
+    },
+    get C54() {
+      return C[54] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 4288248699.0
+      });
+    }
+  }, false);
+  var C = Array(55).fill(void 0);
+  var I = [
+    "file:///C:/Users/realDmitryScarlet/Desktop/anton/todolist/lib/screens/cart.dart",
+    "package:provider_shopper/screens/cart.dart"
+  ];
+  var _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
+  var _Location_name = dart.privateName(widget_inspector, "_Location.name");
+  var _Location_column = dart.privateName(widget_inspector, "_Location.column");
+  var _Location_line = dart.privateName(widget_inspector, "_Location.line");
+  var _Location_file = dart.privateName(widget_inspector, "_Location.file");
+  var EdgeInsets_bottom = dart.privateName(edge_insets, "EdgeInsets.bottom");
+  var EdgeInsets_right = dart.privateName(edge_insets, "EdgeInsets.right");
+  var EdgeInsets_top = dart.privateName(edge_insets, "EdgeInsets.top");
+  var EdgeInsets_left = dart.privateName(edge_insets, "EdgeInsets.left");
+  cart.MyCart = class MyCart extends framework.StatelessWidget {
+    build(context) {
+      if (context == null) dart.nullFailed(I[0], 9, 29, "context");
+      return new scaffold.Scaffold.new({appBar: new app_bar.AppBar.new({title: new text.Text.new("Выполненные задачи:", {$creationLocationd_0dea112b090073317d4: C[0] || CT.C0}), backgroundColor: new ui.Color.new(4294506744), $creationLocationd_0dea112b090073317d4: C[3] || CT.C3}), body: new container.Container.new({color: new ui.Color.new(268435455), child: new basic.Column.new({children: T.JSArrayOfWidget().of([new basic.Expanded.new({child: new basic.Padding.new({padding: C[7] || CT.C7, child: new cart._CartList.new({$creationLocationd_0dea112b090073317d4: C[8] || CT.C8}), $creationLocationd_0dea112b090073317d4: C[10] || CT.C10}), $creationLocationd_0dea112b090073317d4: C[14] || CT.C14})]), $creationLocationd_0dea112b090073317d4: C[17] || CT.C17}), $creationLocationd_0dea112b090073317d4: C[20] || CT.C20}), $creationLocationd_0dea112b090073317d4: C[24] || CT.C24});
+    }
+  };
+  (cart.MyCart.new = function(opts) {
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    cart.MyCart.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = cart.MyCart.prototype;
+  dart.addTypeTests(cart.MyCart);
+  dart.addTypeCaches(cart.MyCart);
+  dart.setMethodSignature(cart.MyCart, () => ({
+    __proto__: dart.getMethods(cart.MyCart.__proto__),
+    build: dart.fnType(framework.Widget, [framework.BuildContext])
+  }));
+  dart.setLibraryUri(cart.MyCart, I[1]);
+  cart._CartList = class _CartList extends framework.StatelessWidget {
+    build(context) {
+      if (context == null) dart.nullFailed(I[0], 34, 29, "context");
+      let cart = provider['WatchContext|watch'](cart$.CartModel, context);
+      new basic.Padding.new({padding: new edge_insets.EdgeInsets.all(20.0), $creationLocationd_0dea112b090073317d4: C[28] || CT.C28});
+      return new scroll_view.ListView.builder({itemCount: cart.items[$length], itemBuilder: dart.fn((context, index) => {
+          if (context == null) dart.nullFailed(I[0], 39, 21, "context");
+          if (index == null) dart.nullFailed(I[0], 39, 30, "index");
+          return new list_tile.ListTile.new({leading: new container.Container.new({child: cart.items[$_get](index).image, $creationLocationd_0dea112b090073317d4: C[31] || CT.C31}), trailing: new icon_button.IconButton.new({icon: new icon.Icon.new(icons.Icons.read_more, {size: 28.0, $creationLocationd_0dea112b090073317d4: C[34] || CT.C34}), onPressed: dart.fn(() => navigator.Navigator.pushNamed(T.ObjectN(), context, "/" + dart.toString(cart.items[$_get](index).id)), T.VoidTovoid()), $creationLocationd_0dea112b090073317d4: C[38] || CT.C38}), title: new text.Text.new(cart.items[$_get](index).name, {$creationLocationd_0dea112b090073317d4: C[42] || CT.C42}), $creationLocationd_0dea112b090073317d4: C[45] || CT.C45});
+        }, T.BuildContextAndintToListTile()), $creationLocationd_0dea112b090073317d4: C[50] || CT.C50});
+    }
+  };
+  (cart._CartList.new = function(opts) {
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    cart._CartList.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = cart._CartList.prototype;
+  dart.addTypeTests(cart._CartList);
+  dart.addTypeCaches(cart._CartList);
+  dart.setMethodSignature(cart._CartList, () => ({
+    __proto__: dart.getMethods(cart._CartList.__proto__),
+    build: dart.fnType(framework.Widget, [framework.BuildContext])
+  }));
+  dart.setLibraryUri(cart._CartList, I[1]);
+  var Color_value = dart.privateName(ui, "Color.value");
+  dart.defineLazy(cart, {
+    /*cart.mColor*/get mColor() {
+      return C[54] || CT.C54;
+    }
+  }, false);
+  dart.trackLibraries("packages/provider_shopper/screens/cart.dart", {
+    "package:provider_shopper/screens/cart.dart": cart
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["cart.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;UAQ4B;AACxB,YAAO,oCACG,+BACC,kBAAK,kGACK,iBAAM,4EAEnB,oCACG,iBAAM,mBACN,gCACK,wBACR,+BACS,sDAEE;IAOrB;;;;;;EACF;;;;;;;;;;UAI4B;AACpB,iBAAe,gDAAR,OAAO;AACkB,MAApC,gCAA4B,+BAAI;AAChC,YAAgB,8CACH,AAAK,AAAM,IAAP,8BACF,SAAC,SAAS;cAAT;cAAS;AAAU,sDACtB,oCAAiB,AAAK,AAAK,AAAQ,IAAd,cAAO,KAAK,8EAChC,sCACF,kBAAW,8BAAiB,4EACvB,cAAgB,2CACvB,OAAO,EAAE,AAAI,MAAuB,cAArB,AAAK,AAAK,AAAQ,IAAd,cAAO,KAAK,2FAE9B,kBAAK,AAAK,AAAK,AAAQ,IAAd,cAAO,KAAK;;IAGlC;;;;;;EACF;;;;;;;;;;MA7CM,WAAM","file":"../../../../../../../packages/provider_shopper/screens/cart.dart.lib.js"}');
+  // Exports:
+  return {
+    screens__cart: cart
+  };
+}));
+
+//# sourceMappingURL=cart.dart.lib.js.map

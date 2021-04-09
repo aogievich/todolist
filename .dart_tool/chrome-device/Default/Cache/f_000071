@@ -1,0 +1,323 @@
+define(['dart_sdk', 'packages/provider/src/provider.dart', 'packages/provider_shopper/models/catalog.dart', 'packages/flutter/src/widgets/widget_span.dart', 'packages/provider/src/listenable_provider.dart', 'packages/provider_shopper/models/cart.dart', 'packages/nested/nested.dart', 'packages/flutter/src/material/app.dart', 'packages/provider_shopper/common/theme.dart', 'packages/provider_shopper/screens/cart.dart', 'packages/provider_shopper/screens/Starlight.dart', 'packages/provider_shopper/screens/WishingWell.dart', 'packages/provider_shopper/screens/PillBreaker.dart'], (function load__packages__provider_shopper__main_dart(dart_sdk, packages__provider__src__provider$46dart, packages__provider_shopper__models__catalog$46dart, packages__flutter__src__widgets__widget_span$46dart, packages__provider__src__listenable_provider$46dart, packages__provider_shopper__models__cart$46dart, packages__nested__nested$46dart, packages__flutter__src__material__app$46dart, packages__provider_shopper__common__theme$46dart, packages__provider_shopper__screens__cart$46dart, packages__provider_shopper__screens__Starlight$46dart, packages__provider_shopper__screens__WishingWell$46dart, packages__provider_shopper__screens__PillBreaker$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const _interceptors = dart_sdk._interceptors;
+  const _js_helper = dart_sdk._js_helper;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const provider = packages__provider__src__provider$46dart.src__provider;
+  const catalog = packages__provider_shopper__models__catalog$46dart.models__catalog;
+  const framework = packages__flutter__src__widgets__widget_span$46dart.src__widgets__framework;
+  const widget_inspector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__widget_inspector;
+  const binding = packages__flutter__src__widgets__widget_span$46dart.src__widgets__binding;
+  const change_notifier_provider = packages__provider__src__listenable_provider$46dart.src__change_notifier_provider;
+  const cart = packages__provider_shopper__models__cart$46dart.models__cart;
+  const nested = packages__nested__nested$46dart.nested;
+  const app = packages__flutter__src__material__app$46dart.src__material__app;
+  const theme = packages__provider_shopper__common__theme$46dart.common__theme;
+  const cart$ = packages__provider_shopper__screens__cart$46dart.screens__cart;
+  const Starlight = packages__provider_shopper__screens__Starlight$46dart.screens__Starlight;
+  const WishingWell = packages__provider_shopper__screens__WishingWell$46dart.screens__WishingWell;
+  const PillBreaker = packages__provider_shopper__screens__PillBreaker$46dart.screens__PillBreaker;
+  var main = Object.create(dart.library);
+  dart._checkModuleNullSafetyMode(true);
+  var T = {
+    ProviderOfCatalogModel: () => (T.ProviderOfCatalogModel = dart.constFn(provider.Provider$(catalog.CatalogModel)))(),
+    BuildContextToCatalogModel: () => (T.BuildContextToCatalogModel = dart.constFn(dart.fnType(catalog.CatalogModel, [framework.BuildContext])))(),
+    ChangeNotifierProxyProviderOfCatalogModel$CartModel: () => (T.ChangeNotifierProxyProviderOfCatalogModel$CartModel = dart.constFn(change_notifier_provider.ChangeNotifierProxyProvider$(catalog.CatalogModel, cart.CartModel)))(),
+    BuildContextToCartModel: () => (T.BuildContextToCartModel = dart.constFn(dart.fnType(cart.CartModel, [framework.BuildContext])))(),
+    CartModelN: () => (T.CartModelN = dart.constFn(dart.nullable(cart.CartModel)))(),
+    BuildContextAndCatalogModelAndCartModelNToCartModel: () => (T.BuildContextAndCatalogModelAndCartModelNToCartModel = dart.constFn(dart.fnType(cart.CartModel, [framework.BuildContext, catalog.CatalogModel, T.CartModelN()])))(),
+    JSArrayOfSingleChildWidget: () => (T.JSArrayOfSingleChildWidget = dart.constFn(_interceptors.JSArray$(nested.SingleChildWidget)))(),
+    BuildContextToMyCart: () => (T.BuildContextToMyCart = dart.constFn(dart.fnType(cart$.MyCart, [framework.BuildContext])))(),
+    BuildContextToStarlight: () => (T.BuildContextToStarlight = dart.constFn(dart.fnType(Starlight.Starlight, [framework.BuildContext])))(),
+    BuildContextToWishingWell: () => (T.BuildContextToWishingWell = dart.constFn(dart.fnType(WishingWell.WishingWell, [framework.BuildContext])))(),
+    BuildContextToPillBreaker: () => (T.BuildContextToPillBreaker = dart.constFn(dart.fnType(PillBreaker.PillBreaker, [framework.BuildContext])))(),
+    BuildContextToWidget: () => (T.BuildContextToWidget = dart.constFn(dart.fnType(framework.Widget, [framework.BuildContext])))(),
+    IdentityMapOfString$BuildContextToWidget: () => (T.IdentityMapOfString$BuildContextToWidget = dart.constFn(_js_helper.IdentityMap$(core.String, T.BuildContextToWidget())))()
+  };
+  var T$Eval = Object.assign({
+    _: () => T$Eval
+  }, T);
+  var S = {
+    _: () => S
+  };
+  var S$Eval = Object.assign({
+    _: () => S$Eval
+  }, S);
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  dart.defineLazy(CT, {
+    get C2() {
+      return C[2] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "create",
+        [_Location_column]: 18,
+        [_Location_line]: 20,
+        [_Location_file]: null
+      });
+    },
+    get C1() {
+      return C[1] = dart.constList([C[2] || CT.C2], widget_inspector._Location);
+    },
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 9,
+        [_Location_line]: 20,
+        [_Location_file]: "file:///C:/Users/realDmitryScarlet/Desktop/anton/todolist/lib/main.dart"
+      });
+    },
+    get C5() {
+      return C[5] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "create",
+        [_Location_column]: 11,
+        [_Location_line]: 22,
+        [_Location_file]: null
+      });
+    },
+    get C6() {
+      return C[6] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "update",
+        [_Location_column]: 11,
+        [_Location_line]: 23,
+        [_Location_file]: null
+      });
+    },
+    get C4() {
+      return C[4] = dart.constList([C[5] || CT.C5, C[6] || CT.C6], widget_inspector._Location);
+    },
+    get C3() {
+      return C[3] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[4] || CT.C4,
+        [_Location_name]: null,
+        [_Location_column]: 9,
+        [_Location_line]: 21,
+        [_Location_file]: "file:///C:/Users/realDmitryScarlet/Desktop/anton/todolist/lib/main.dart"
+      });
+    },
+    get C8() {
+      return C[8] = dart.constList([], widget_inspector._Location);
+    },
+    get C7() {
+      return C[7] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[8] || CT.C8,
+        [_Location_name]: null,
+        [_Location_column]: 33,
+        [_Location_line]: 36,
+        [_Location_file]: "file:///C:/Users/realDmitryScarlet/Desktop/anton/todolist/lib/main.dart"
+      });
+    },
+    get C9() {
+      return C[9] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[8] || CT.C8,
+        [_Location_name]: null,
+        [_Location_column]: 30,
+        [_Location_line]: 37,
+        [_Location_file]: "file:///C:/Users/realDmitryScarlet/Desktop/anton/todolist/lib/main.dart"
+      });
+    },
+    get C10() {
+      return C[10] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[8] || CT.C8,
+        [_Location_name]: null,
+        [_Location_column]: 30,
+        [_Location_line]: 38,
+        [_Location_file]: "file:///C:/Users/realDmitryScarlet/Desktop/anton/todolist/lib/main.dart"
+      });
+    },
+    get C11() {
+      return C[11] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[8] || CT.C8,
+        [_Location_name]: null,
+        [_Location_column]: 30,
+        [_Location_line]: 39,
+        [_Location_file]: "file:///C:/Users/realDmitryScarlet/Desktop/anton/todolist/lib/main.dart"
+      });
+    },
+    get C14() {
+      return C[14] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "title",
+        [_Location_column]: 9,
+        [_Location_line]: 31,
+        [_Location_file]: null
+      });
+    },
+    get C15() {
+      return C[15] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "theme",
+        [_Location_column]: 9,
+        [_Location_line]: 32,
+        [_Location_file]: null
+      });
+    },
+    get C16() {
+      return C[16] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "debugShowCheckedModeBanner",
+        [_Location_column]: 9,
+        [_Location_line]: 33,
+        [_Location_file]: null
+      });
+    },
+    get C17() {
+      return C[17] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "initialRoute",
+        [_Location_column]: 9,
+        [_Location_line]: 34,
+        [_Location_file]: null
+      });
+    },
+    get C18() {
+      return C[18] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "routes",
+        [_Location_column]: 9,
+        [_Location_line]: 35,
+        [_Location_file]: null
+      });
+    },
+    get C13() {
+      return C[13] = dart.constList([C[14] || CT.C14, C[15] || CT.C15, C[16] || CT.C16, C[17] || CT.C17, C[18] || CT.C18], widget_inspector._Location);
+    },
+    get C12() {
+      return C[12] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[13] || CT.C13,
+        [_Location_name]: null,
+        [_Location_column]: 14,
+        [_Location_line]: 30,
+        [_Location_file]: "file:///C:/Users/realDmitryScarlet/Desktop/anton/todolist/lib/main.dart"
+      });
+    },
+    get C21() {
+      return C[21] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "providers",
+        [_Location_column]: 7,
+        [_Location_line]: 19,
+        [_Location_file]: null
+      });
+    },
+    get C22() {
+      return C[22] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 7,
+        [_Location_line]: 30,
+        [_Location_file]: null
+      });
+    },
+    get C20() {
+      return C[20] = dart.constList([C[21] || CT.C21, C[22] || CT.C22], widget_inspector._Location);
+    },
+    get C19() {
+      return C[19] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[20] || CT.C20,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 18,
+        [_Location_file]: "file:///C:/Users/realDmitryScarlet/Desktop/anton/todolist/lib/main.dart"
+      });
+    },
+    get C23() {
+      return C[23] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[8] || CT.C8,
+        [_Location_name]: null,
+        [_Location_column]: 10,
+        [_Location_line]: 12,
+        [_Location_file]: "file:///C:/Users/realDmitryScarlet/Desktop/anton/todolist/lib/main.dart"
+      });
+    }
+  }, false);
+  var C = Array(24).fill(void 0);
+  var I = [
+    "file:///C:/Users/realDmitryScarlet/Desktop/anton/todolist/lib/main.dart",
+    "package:provider_shopper/main.dart"
+  ];
+  var _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
+  var _Location_name = dart.privateName(widget_inspector, "_Location.name");
+  var _Location_column = dart.privateName(widget_inspector, "_Location.column");
+  var _Location_line = dart.privateName(widget_inspector, "_Location.line");
+  var _Location_file = dart.privateName(widget_inspector, "_Location.file");
+  main.MyApp = class MyApp extends framework.StatelessWidget {
+    build(context) {
+      if (context == null) dart.nullFailed(I[0], 17, 29, "context");
+      return new provider.MultiProvider.new({providers: T.JSArrayOfSingleChildWidget().of([new (T.ProviderOfCatalogModel()).new({create: dart.fn(context => {
+              if (context == null) dart.nullFailed(I[0], 20, 27, "context");
+              return new catalog.CatalogModel.new();
+            }, T.BuildContextToCatalogModel()), $creationLocationd_0dea112b090073317d4: C[0] || CT.C0}), new (T.ChangeNotifierProxyProviderOfCatalogModel$CartModel()).new({create: dart.fn(context => {
+              if (context == null) dart.nullFailed(I[0], 22, 20, "context");
+              return new cart.CartModel.new();
+            }, T.BuildContextToCartModel()), update: dart.fn((context, catalog, cart) => {
+              if (context == null) dart.nullFailed(I[0], 23, 20, "context");
+              if (catalog == null) dart.nullFailed(I[0], 23, 29, "catalog");
+              if (cart == null) dart.throw(new core.ArgumentError.notNull("cart"));
+              cart.catalog = catalog;
+              return cart;
+            }, T.BuildContextAndCatalogModelAndCartModelNToCartModel()), $creationLocationd_0dea112b090073317d4: C[3] || CT.C3})]), child: new app.MaterialApp.new({title: "Provider Demo", theme: theme.appTheme, debugShowCheckedModeBanner: false, initialRoute: "/2", routes: new (T.IdentityMapOfString$BuildContextToWidget()).from(["/cart", dart.fn(context => {
+              if (context == null) dart.nullFailed(I[0], 36, 21, "context");
+              return new cart$.MyCart.new({$creationLocationd_0dea112b090073317d4: C[7] || CT.C7});
+            }, T.BuildContextToMyCart()), "/1", dart.fn(context => {
+              if (context == null) dart.nullFailed(I[0], 37, 18, "context");
+              return new Starlight.Starlight.new({$creationLocationd_0dea112b090073317d4: C[9] || CT.C9});
+            }, T.BuildContextToStarlight()), "/3", dart.fn(context => {
+              if (context == null) dart.nullFailed(I[0], 38, 18, "context");
+              return new WishingWell.WishingWell.new({$creationLocationd_0dea112b090073317d4: C[10] || CT.C10});
+            }, T.BuildContextToWishingWell()), "/2", dart.fn(context => {
+              if (context == null) dart.nullFailed(I[0], 39, 18, "context");
+              return new PillBreaker.PillBreaker.new({$creationLocationd_0dea112b090073317d4: C[11] || CT.C11});
+            }, T.BuildContextToPillBreaker())]), $creationLocationd_0dea112b090073317d4: C[12] || CT.C12}), $creationLocationd_0dea112b090073317d4: C[19] || CT.C19});
+    }
+  };
+  (main.MyApp.new = function(opts) {
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    main.MyApp.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = main.MyApp.prototype;
+  dart.addTypeTests(main.MyApp);
+  dart.addTypeCaches(main.MyApp);
+  dart.setMethodSignature(main.MyApp, () => ({
+    __proto__: dart.getMethods(main.MyApp.__proto__),
+    build: dart.fnType(framework.Widget, [framework.BuildContext])
+  }));
+  dart.setLibraryUri(main.MyApp, I[1]);
+  main.main = function main$() {
+    binding.runApp(new main.MyApp.new({$creationLocationd_0dea112b090073317d4: C[23] || CT.C23}));
+  };
+  dart.trackLibraries("packages/provider_shopper/main.dart", {
+    "package:provider_shopper/main.dart": main
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["main.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;UAgB4B;AACxB,YAAO,4CACM,mCACT,8CAAiB;kBAAC;AAAY;yGAC9B,2EACU;kBAAC;AAAY;qDACb,SAAC,SAAS,SAAS;kBAAlB;kBAAS;AAChB,kBAAI,AAAK,IAAD,UAAU,AAAmC,WAAf,+BAAQ;AACxB,cAAtB,AAAK,IAAD,WAAW,OAAO;AACtB,oBAAO,KAAI;2IAIV,gCACE,wBACA,4CACqB,qBACd,cACN,yDACN,SAAS;kBAAC;AAAY;0CACtB,MAAM;kBAAC;AAAY;6CACnB,MAAM;kBAAC;AAAY;+CACnB,MAAM;kBAAC;AAAY;;IAI3B;;;;;;EACF;;;;;;;;;AAhCiB,IAAf,eAAO;EACT","file":"../../../../../../packages/provider_shopper/main.dart.lib.js"}');
+  // Exports:
+  return {
+    main: main
+  };
+}));
+
+//# sourceMappingURL=main.dart.lib.js.map
